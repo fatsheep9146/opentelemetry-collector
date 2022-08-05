@@ -46,7 +46,7 @@ func TracesFromProto(orig otlptrace.TracesData) Traces {
 // Traces is the top-level struct that is propagated through the traces pipeline.
 // Use NewTraces to create new instance, zero-initialized instance is not valid for use.
 type Traces struct {
-	// When marhsal/unmarshal unless it is in the request for otlp protocol, convert to otlptrace.TracesData.
+	// When marshal/unmarshal unless it is in the request for otlp protocol, convert to otlptrace.TracesData.
 	orig *otlpcollectortrace.ExportTraceServiceRequest
 }
 
